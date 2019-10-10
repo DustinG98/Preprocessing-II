@@ -8,6 +8,13 @@
     padding-bottom: 2%;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      .flexBox(center, center, column);
+      .headerTxt{
+        width: 80%;
+        
+      }
+    }
   }
 
   .content-section {
@@ -92,10 +99,10 @@
       }
     }
     .btn{
-      .customBtn(rgb(1, 141, 206), 80%, white);
+      .customBtn(@eastern-blue, 80%, white);
       .flexBox(center, center, row);
       @media @mobile {
-        .customBtn(rgb(1, 141, 206), 80%, white);
+        .customBtn(@eastern-blue, 80%, white);
         .flexBox(center, center, row);
       }
       
