@@ -1,7 +1,20 @@
 // Mixins in here
 
-.flexBox(@j, @a){
+.flexBox(@j, @a, @d){
     display: flex;
+    flex-direction: @d;
     justify-content: @j;
     align-items: @a;
+}
+
+.customBtn(@bg-color, @width, @txt-color){
+    display: block;
+    background-color: @bg-color;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color:@txt-color;
 }

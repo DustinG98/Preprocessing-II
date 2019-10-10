@@ -1,16 +1,22 @@
 // Navigation Styles here
 
 nav {
-    .flexBox(space-between, center);
+    .flexBox(space-between, center, row);
     div{
         width: 49%;
-        .flexBox(space-evenly, center);
+        .flexBox(space-evenly, center, row);
         a{
             text-decoration: none;
             color: @font-color;
             font-size: 1.6rem;
+        }//this ends the a tag
+    }//this ends the div
+    margin: 3% 0 3% 0;
+    @media @mobile {
+        .flexBox(center, center, column);
+        border-bottom: 1px dashed @navigation-border;
+        div{
+            width: 90%;
         }
     }
-    margin: 3% 0;
-
-}
+}//this ends the nav
