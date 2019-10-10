@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fun Bus Travel Agency - Solution</title>
 
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
@@ -15,10 +15,28 @@
 </head>
 
 <body>
+      <div class="nav-container">
+        <nav>
+        <h1>Fun Bus</h1>
+        <div>
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </div>
+        </nav>
+      </div>
+      <div class="container home">
+      <header>
+      <img src="img/fun-bus.jpg" alt="fun bus">
+      <div class="headerTxt">
+        <h2>Welcome To Fun Bus!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt dicta iusto culpa nostrum non, porro neque error corrupti eveniet dolores. Minus ratione tenetur repellendus, sapiente enim assumenda beatae nulla rerum.</p>
+      </div>
+    </header>
 
+      
   
-     
-  <div class="container home">
    
     <section class="content-section">
       <div class="text-content">
@@ -64,6 +82,25 @@
         <div class="btn">Sign Me Up!</div>
       </div>
     </section>
+    <section class="contact-container"> 
+      <form>
+          <h5>First Name:</h5><br>
+          <input type="text" name="firstName" placeholder="Your name..."><br>
+          <h5>Last Name:</h5><br>
+          <input type="text" name="lastName" placeholder="Your last name.."><br>
+          <h5>Vacation Package:</h5><br>
+          <select name="vacaPackage">
+            <option value="funInSun">Fun In The Sun</option>
+            <option value="mtnExc">Mountain Excursion</option>
+            <option value="islandGetaway">Island Getaway</option>
+          </select><br>
+          <h5>Email:</h5><br>
+          <input type="text" name="email" placeholder="Your email..."><br>
+          <h5>Subject:</h5><br>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea><br>
+          <input class="submit" type="submit"><br>
+      </form>
+  </section>
   </div><!-- container -->
 
   <footer class="footer">
