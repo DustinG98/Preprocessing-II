@@ -102,13 +102,32 @@
       }
     }
     .btn{
-      .customBtn(@eastern-blue, 80%, white);
+      .customBtn(@eastern-blue, 90%, white);
       .flexBox(center, center, row);
       @media @mobile {
-        .customBtn(@eastern-blue, 80%, white);
+        .customBtn(@eastern-blue, 90%, white);
         .flexBox(center, center, row);
       }
       
+    }
+  }
+  .contact-container{
+    width: 100%;
+    border-top: 2px dashed @navigation-border;
+    .flexBox(center, center, column);
+    form{
+      width: 80%;
+      .flexBox(center, flex-start, column);
+      input{
+        width: 100%;
+      }
+      textarea{
+        width: 100%;
+      }
+      .submit{
+        .customBtn(@button-bg, 100%, @white);
+        .flexBox(center, center, row)
+      }
     }
   }
 }// home
